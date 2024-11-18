@@ -1,0 +1,27 @@
+[package]
+name = "valida-basic"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "valida"
+path = "src/bin/valida.rs"
+
+[[bin]]
+name = "test_prover"
+path = "src/bin/test_prover.rs"
+
+[dependencies]
+
+[dev-dependencies]
+ciborium = "0.2.2"
+p3-challenger = { workspace = true }
+p3-dft = { workspace = true }
+p3-field = { workspace = true }
+p3-fri = { workspace = true }
+p3-keccak = { workspace = true }
+p3-mds = { workspace = true }
+p3-merkle-tree = { workspace = true }
+p3-poseidon = { workspace = true }
+p3-symmetric = { workspace = true }
